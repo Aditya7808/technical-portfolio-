@@ -92,12 +92,12 @@ const EXPERIENCE_DATA = [
     dates: "AUG 2026 — PRESENT",
     location: "Noida, India",
     bullets: [
-      "Mentored and trained multiple student batches on core <strong>AI/ML concepts</strong>, deep learning pipelines, and production GenAI agent architectures.",
-      "Delivered comprehensive hands-on training on <strong>AWS Cloud Foundations</strong>, guiding students through AWS cloud architecture, model deployment, and cloud security (AWS Bedrock, SageMaker, EC2, Lambda, S3, IAM).",
-      "Conducted specialized bootcamp cohorts preparing students for prestigious <strong>Global Certifications by Google</strong> (Google Cloud and Google AI credentials), ensuring high pass rates on industry-standard assessments.",
-      "Engineered an NLP personalization pipeline (semantic embeddings, FAISS vector search) that converts unstructured skill profiles into tailored interview questions, reaching <strong>85% relevance (BERTScore, ROUGE)</strong> and cutting manual data preparation by <strong>40%</strong>.",
-      "Mentored capstone implementations across RAG and agentic AI workflows (LangChain, LangGraph, CrewAI) with prompt engineering, LLM evaluation suites, and code reviews.",
-      "<strong>Tech stack:</strong> Python, PyTorch, TensorFlow, Scikit-learn, AWS Cloud, Google Cloud Certifications, LangChain, LangGraph, Hugging Face, FastAPI, Jupyter, Docker."
+      "Mentor student batches on core <strong>AI/ML</strong>, deep learning and production GenAI agent architectures; run hands-on <strong>AWS Cloud Foundations</strong> training (Bedrock, SageMaker, EC2, Lambda, S3, IAM).",
+      "Lead bootcamp cohorts preparing students for <strong>Google Global Certifications</strong> (Google Cloud and Google AI credentials).",
+      "Built an NLP personalization pipeline (embeddings, FAISS) that turns skill profiles into tailored interview questions: <strong>85% relevance (BERTScore, ROUGE)</strong> and <strong>40% less manual data preparation</strong>.",
+      "Engineered secure LLM evaluation pipelines and model endpoints on AWS, tuning token limits and inference settings for <strong>30% better output consistency</strong>.",
+      "Mentor capstones on RAG and agentic workflows (LangChain, LangGraph, CrewAI) with prompt engineering, LLM eval suites and code reviews.",
+      "<strong>Tech stack:</strong> Python, PyTorch, TensorFlow, Scikit-learn, LangChain, LangGraph, Hugging Face, FastAPI, Jupyter, Docker."
     ]
   },
   {
