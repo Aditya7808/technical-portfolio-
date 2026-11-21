@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1160" width="100%" height="auto">
+  <defs>
+    <style>
+      .title { font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 700; fill: #1C1917; letter-spacing: 0.08em; }
+      .layer-tag { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 11px; font-weight: 700; fill: #2F5D9E; letter-spacing: 0.08em; }
+      .box-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 12px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.04em; }
+      .box-desc { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 9.5px; fill: rgba(255, 255, 255, 0.9); line-height: 1.4; }
+      .arrow-lbl { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 9.5px; fill: #78716C; font-weight: 600; }
+      .note-txt { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; fill: #78716C; line-height: 1.45; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1C1917"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2F5D9E"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="100%" height="100%" fill="#FAF6F0" rx="12" stroke="#E6DFD5" stroke-width="2"/>
+
+  <!-- Main Header -->
+  <text x="40" y="44" class="title">AGENT FORGE · MULTI-AGENT SYSTEM FLOW</text>
+
+  <!-- ========================================================
+       01 · EXPERIENCE &amp; ENTRY POINTS
+       ======================================================== -->
+  <rect x="330" y="70" width="370" height="185" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="345" y="90" class="layer-tag">01 · EXPERIENCE &amp; ENTRY POINTS</text>
+
+  <!-- 01 Box 1: User / Application Input (Teal) -->
+  <rect x="345" y="100" width="340" height="38" rx="6" fill="#2A9D8F"/>
+  <text x="515" y="116" class="box-title" text-anchor="middle">USER / APPLICATION INPUT</text>
+  <text x="515" y="130" class="box-desc" text-anchor="middle">Chat · Documents · Audio · Business events</text>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="515" y1="138" x2="515" y2="150" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 01 Box 2: Interfaces &amp; Channels (Blue) -->
+  <rect x="345" y="150" width="340" height="42" rx="6" fill="#457B9D"/>
+  <text x="515" y="165" class="box-title" text-anchor="middle">INTERFACES &amp; CHANNELS</text>
+  <text x="515" y="177" class="box-desc" text-anchor="middle">Streamlit · React / Vite · Gradio · CLI</text>
+  <text x="515" y="188" class="box-desc" text-anchor="middle">Slack · Instagram · WhatsApp · REST / WebSocket</text>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="515" y1="192" x2="515" y2="202" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 01 Box 3: App / API Entry (Slate / Blue) -->
+  <rect x="345" y="202" width="340" height="42" rx="6" fill="#3B82F6"/>
+  <text x="515" y="217" class="box-title" text-anchor="middle">APP / API ENTRY</text>
+  <text x="515" y="229" class="box-desc" text-anchor="middle">FastAPI · Flask · Express</text>
+  <text x="515" y="239" class="box-desc" text-anchor="middle">Session · request context · input payload</text>
+
+  <!-- Connector from Layer 01 to Layer 02 -->
+  <line x1="515" y1="255" x2="515" y2="280" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ========================================================
+       02 · CONTROL PLANE &amp; ORCHESTRATION
+       ======================================================== -->
+  <rect x="320" y="280" width="390" height="195" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="335" y="300" class="layer-tag">02 · CONTROL PLANE &amp; ORCHESTRATION</text>
+
+  <!-- 02 Box 1: Request Understanding (Blue) -->
+  <rect x="335" y="310" width="360" height="40" rx="6" fill="#457B9D"/>
+  <text x="515" y="325" class="box-title" text-anchor="middle">REQUEST UNDERSTANDING</text>
+  <text x="515" y="337" class="box-desc" text-anchor="middle">Parse intent · extract entities · classify task</text>
+  <text x="515" y="347" class="box-desc" text-anchor="middle">Build typed state / task context</text>
+
+  <!-- Arrow down -->
+  <line x1="515" y1="350" x2="515" y2="362" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 02 Box 2: Router / Planner (Coral / Red) -->
+  <rect x="335" y="362" width="360" height="42" rx="6" fill="#E76F51"/>
+  <text x="515" y="377" class="box-title" text-anchor="middle">ROUTER / PLANNER</text>
+  <text x="515" y="389" class="box-desc" text-anchor="middle">Choose workflow · select tools · plan steps</text>
+  <text x="515" y="399" class="box-desc" text-anchor="middle">LangGraph StateGraph · LangChain · custom routing</text>
+
+  <!-- Arrow down -->
+  <line x1="515" y1="404" x2="515" y2="416" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 02 Box 3: Execution Pattern (Teal) -->
+  <rect x="335" y="416" width="360" height="44" rx="6" fill="#2A9D8F"/>
+  <text x="515" y="431" class="box-title" text-anchor="middle">EXECUTION PATTERN</text>
+  <text x="515" y="443" class="box-desc" text-anchor="middle">ReAct loop · Supervisor / specialist team</text>
+  <text x="515" y="454" class="box-desc" text-anchor="middle">Hierarchical · collaborative · sequential / parallel</text>
+
+  <!-- Branching Arrows to Layer 03 -->
+  <path d="M 515 460 L 515 480 L 185 480 L 185 515" fill="none" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 515 460 L 515 480 L 457 480 L 457 515" fill="none" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 515 460 L 515 480 L 730 480 L 730 515" fill="none" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 515 460 L 515 480 L 1010 480 L 1010 515" fill="none" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <text x="580" y="495" class="arrow-lbl">response</text>
+
+  <!-- ========================================================
+       03 · SPECIALIST AGENT WORKFLOWS
+       ======================================================== -->
+  <rect x="40" y="500" width="1120" height="85" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="55" y="520" class="layer-tag">03 · SPECIALIST AGENT WORKFLOWS (SELECTED FROM THE COLLECTION)</text>
+
+  <!-- Specialist 1: Domain Specialists (Teal) -->
+  <rect x="55" y="526" width="260" height="48" rx="6" fill="#2A9D8F"/>
+  <text x="185" y="541" class="box-title" text-anchor="middle">DOMAIN SPECIALISTS</text>
+  <text x="185" y="553" class="box-desc" text-anchor="middle">Legal / contract review · AI tutoring</text>
+  <text x="185" y="565" class="box-desc" text-anchor="middle">UI/UX audit · E2E test generation · games</text>
+
+  <!-- Specialist 2: Research &amp; Knowledge (Blue) -->
+  <rect x="330" y="526" width="255" height="48" rx="6" fill="#457B9D"/>
+  <text x="457" y="541" class="box-title" text-anchor="middle">RESEARCH &amp; KNOWLEDGE</text>
+  <text x="457" y="553" class="box-desc" text-anchor="middle">Web search · summarization · citations</text>
+  <text x="457" y="565" class="box-desc" text-anchor="middle">Audio transcription + grounded Q&amp;A</text>
+
+  <!-- Specialist 3: Customer &amp; Communication (Coral) -->
+  <rect x="600" y="526" width="260" height="48" rx="6" fill="#E76F51"/>
+  <text x="730" y="541" class="box-title" text-anchor="middle">CUSTOMER &amp; COMMUNICATION</text>
+  <text x="730" y="553" class="box-desc" text-anchor="middle">Support · sentiment · escalation</text>
+  <text x="730" y="565" class="box-desc" text-anchor="middle">Instagram DM · Slack assistant</text>
+
+  <!-- Specialist 4: Business &amp; Commerce (Amber) -->
+  <rect x="875" y="526" width="270" height="48" rx="6" fill="#D97706"/>
+  <text x="1010" y="541" class="box-title" text-anchor="middle">BUSINESS &amp; COMMERCE</text>
+  <text x="1010" y="553" class="box-desc" text-anchor="middle">Lead generation · property discovery</text>
+  <text x="1010" y="565" class="box-desc" text-anchor="middle">Shopping intent · product recommendations</text>
+
+  <!-- Connectors to Layer 04 -->
+  <line x1="185" y1="574" x2="185" y2="628" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="457" y1="574" x2="457" y2="628" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="730" y1="574" x2="730" y2="628" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="1010" y1="574" x2="1010" y2="628" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ========================================================
+       04 · SHARED INTELLIGENCE &amp; TOOLING LAYER
+       ======================================================== -->
+  <rect x="40" y="620" width="1120" height="88" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="55" y="640" class="layer-tag">04 · SHARED INTELLIGENCE &amp; TOOLING LAYER</text>
+
+  <!-- 04 Box 1: RAG &amp; Retrieval (Blue) -->
+  <rect x="55" y="646" width="250" height="50" rx="6" fill="#457B9D"/>
+  <text x="180" y="661" class="box-title" text-anchor="middle">RAG &amp; RETRIEVAL</text>
+  <text x="180" y="674" class="box-desc" text-anchor="middle">Ingest · chunk · embed · index</text>
+  <text x="180" y="686" class="box-desc" text-anchor="middle">Semantic search · rerank · grounded context</text>
+
+  <!-- 04 Box 2: Model Adapters (Purple) -->
+  <rect x="320" y="646" width="250" height="50" rx="6" fill="#6366F1"/>
+  <text x="445" y="661" class="box-title" text-anchor="middle">MODEL ADAPTERS</text>
+  <text x="445" y="674" class="box-desc" text-anchor="middle">OpenAI / GPT-4o · Anthropic / Claude</text>
+  <text x="445" y="686" class="box-desc" text-anchor="middle">Ollama local models · pluggable providers</text>
+
+  <!-- 04 Box 3: Tools &amp; Integration Gateway (Teal) -->
+  <rect x="585" y="646" width="280" height="50" rx="6" fill="#2A9D8F"/>
+  <text x="725" y="661" class="box-title" text-anchor="middle">TOOLS &amp; INTEGRATION GATEWAY</text>
+  <text x="725" y="674" class="box-desc" text-anchor="middle">Function calling · MCP · 59-tool Slack bot example</text>
+  <text x="725" y="686" class="box-desc" text-anchor="middle">Search · GitHub · Notion · messaging · external APIs</text>
+
+  <!-- 04 Box 4: Memory &amp; Session State (Amber) -->
+  <rect x="880" y="646" width="265" height="50" rx="6" fill="#D97706"/>
+  <text x="1012" y="661" class="box-title" text-anchor="middle">MEMORY &amp; SESSION STATE</text>
+  <text x="1012" y="674" class="box-desc" text-anchor="middle">Conversation / session context · long term memory</text>
+  <text x="1012" y="686" class="box-desc" text-anchor="middle">mem0 · Zep · agent state</text>
+
+  <!-- Flow labels -->
+  <text x="215" y="722" class="arrow-lbl">context</text>
+  <text x="410" y="722" class="arrow-lbl">tool results</text>
+  <text x="500" y="722" class="arrow-lbl">grounding</text>
+  <text x="640" y="722" class="arrow-lbl">state</text>
+  <text x="750" y="722" class="arrow-lbl">read / write</text>
+
+  <!-- Arrow RAG to Result Assembly -->
+  <line x1="200" y1="696" x2="200" y2="760" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 445 696 L 445 730 L 320 730 L 320 760" fill="none" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ========================================================
+       06 · RESPONSE, QUALITY &amp; DELIVERY
+       ======================================================== -->
+  <rect x="155" y="750" width="300" height="270" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="170" y="770" class="layer-tag">06 · RESPONSE, QUALITY &amp; DELIVERY</text>
+
+  <!-- 06 Box 1: Result Assembly (Blue) -->
+  <rect x="170" y="778" width="270" height="54" rx="6" fill="#457B9D"/>
+  <text x="305" y="795" class="box-title" text-anchor="middle">RESULT ASSEMBLY</text>
+  <text x="305" y="810" class="box-desc" text-anchor="middle">Aggregate specialist outputs · cite sources</text>
+  <text x="305" y="823" class="box-desc" text-anchor="middle">Structure answer / action payload</text>
+
+  <!-- Arrow down -->
+  <line x1="305" y1="832" x2="305" y2="865" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 06 Box 2: Checks &amp; Evaluation (Coral) -->
+  <rect x="170" y="865" width="270" height="54" rx="6" fill="#E76F51"/>
+  <text x="305" y="882" class="box-title" text-anchor="middle">CHECKS &amp; EVALUATION</text>
+  <text x="305" y="897" class="box-desc" text-anchor="middle">Trust scoring · validation · retries / fallback</text>
+  <text x="305" y="910" class="box-desc" text-anchor="middle">Human escalation where workflow requires it</text>
+
+  <!-- Arrow down -->
+  <line x1="305" y1="919" x2="305" y2="952" stroke="#1C1917" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 06 Box 3: User-Facing Output (Teal) -->
+  <rect x="170" y="952" width="270" height="54" rx="6" fill="#2A9D8F"/>
+  <text x="305" y="969" class="box-title" text-anchor="middle">USER-FACING OUTPUT</text>
+  <text x="305" y="984" class="box-desc" text-anchor="middle">Answer · report · recommendation · action</text>
+  <text x="305" y="997" class="box-desc" text-anchor="middle">Chat UI · dashboard · API response · export</text>
+
+  <!-- ========================================================
+       05 · DATA &amp; PERSISTENCE
+       ======================================================== -->
+  <rect x="495" y="750" width="665" height="110" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="510" y="770" class="layer-tag">05 · DATA &amp; PERSISTENCE</text>
+
+  <!-- 05 Box 1: Knowledge / Business Data (Slate Blue) -->
+  <rect x="510" y="778" width="290" height="66" rx="6" fill="#475569"/>
+  <text x="655" y="798" class="box-title" text-anchor="middle">KNOWLEDGE / BUSINESS DATA</text>
+  <text x="655" y="816" class="box-desc" text-anchor="middle">PDF / DOCX · product catalogues · SQL tables</text>
+  <text x="655" y="832" class="box-desc" text-anchor="middle">Web sources · conversation history · files</text>
+
+  <!-- 05 Box 2: Application &amp; Vector Stores (Dark Navy) -->
+  <rect x="825" y="778" width="315" height="66" rx="6" fill="#1E293B"/>
+  <text x="982" y="798" class="box-title" text-anchor="middle">APPLICATION &amp; VECTOR STORES</text>
+  <text x="982" y="816" class="box-desc" text-anchor="middle">PostgreSQL · SQLite · Redis</text>
+  <text x="982" y="832" class="box-desc" text-anchor="middle">ChromaDB · FAISS · Pinecone · Qdrant</text>
+
+  <!-- Reference Note Box -->
+  <rect x="495" y="880" width="665" height="52" rx="6" fill="#F5EFE6" stroke="#DCD4C7" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="515" y="902" class="note-txt">REFERENCE VIEW: Agent Forge is a collection of independently implemented agents.</text>
+  <text x="515" y="918" class="note-txt">Each project uses the relevant subset of these layers; this is not one mandatory runtime.</text>
+
+  <!-- Blue dashed telemetry flow -->
+  <path d="M 345 119 L 20 119 L 20 979 L 170 979" fill="none" stroke="#2F5D9E" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow-blue)"/>
+</svg>

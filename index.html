@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Aditya Yadav — AI / ML Engineer</title>
+  <meta name="description" content="AI engineer who builds agentic systems that hold up in production. Deploying secure LLM evaluation pipelines on AWS (Bedrock, SageMaker, EC2), creator of Agent Forge, and Department of Science and Technology (DST), Govt. of India Rank 1 research grant winner.">
+  <meta name="author" content="Aditya Yadav">
+  <link rel="canonical" href="https://yourusername.github.io/portfolio/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/portfolio/">
+  <meta property="og:title" content="Aditya Yadav — AI / ML Engineer">
+  <meta property="og:description" content="AI engineer who builds agentic systems that hold up in production. AWS Bedrock &amp; SageMaker deployment, Agent Forge multi-agents, and high-reliability RAG.">
+  <meta property="og:image" content="assets/project-1.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aditya Yadav — AI / ML Engineer">
+  <meta name="twitter:description" content="AI engineer who builds agentic systems that hold up in production. AWS Bedrock &amp; SageMaker deployment, Agent Forge multi-agents, and high-reliability RAG.">
+  <meta name="twitter:image" content="assets/project-1.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Newsreader (Editorial Serif) & JetBrains Mono (Technical Monospace) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,400..600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aditya Yadav",
+    "jobTitle": "AI / ML Engineer",
+    "url": "https://yourusername.github.io/portfolio/",
+    "sameAs": [
+      "https://github.com/yourusername",
+      "https://linkedin.com/in/yourusername"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Large Language Models",
+      "Autonomous Agents",
+      "Retrieval-Augmented Generation",
+      "LLM Evaluation",
+      "Machine Learning Engineering"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <!-- Top Sticky Header Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <!-- Minimalist Monogram / Logo -->
+      <a href="#home" class="nav-logo" aria-label="Home page">
+        <span class="logo-mark">AY</span>
+        <span class="logo-dot">.</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#writing" class="nav-link">Writing</a></li>
+          <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Controls: Theme Toggle & Mobile Menu Button -->
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="Switch between light and dark theme" title="Toggle theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="menu-toggle" class="icon-button hamburger-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========================================================
+         1. HOME (HERO) SECTION
+         ======================================================== -->
+    <section id="home" class="hero-section container fade-up">
+      <div class="hero-grid">
+        <!-- Left Column: Circular Profile Photo -->
+        <div class="hero-avatar-wrap">
+          <!-- TODO: Place your photo at assets/profile.jpg (180x180 recommended) -->
+          <img src="assets/profile.jpg" alt="Portrait of Aditya Yadav, AI Engineer" class="hero-avatar" width="180" height="180" onerror="this.onerror=null; this.src='assets/profile.svg';">
+        </div>
+
+        <!-- Right Column: Hero Intro Content -->
+        <div class="hero-content">
+          <h1 class="hero-name">Aditya Yadav</h1>
+          <p class="hero-headline-role">AI / ML Engineer</p>
+
+          <!-- Body Paragraphs in larger editorial size -->
+          <div class="hero-bio">
+            <p class="hero-lead">
+              I’m an AI engineer who builds agentic systems that hold up in production. At The SmartBridge, I mentor batches on AI concepts, AWS Cloud Foundations, and Google Global Certifications, while engineering secure LLM evaluation pipelines on AWS.
+            </p>
+            <p class="hero-lead">
+              I also built Agent Forge, a collection of 20+ multi-agent systems, including a 59-tool MCP Slack bot with long-term memory and prompt injection defenses. Earlier, at VANCO, I doubled a recommender’s hit rate from 0.55% to 1.15%.
+            </p>
+            <p class="hero-meta muted">
+              Won Rank 1 in a Department of Science and Technology (DST), Govt. of India program with a ₹2.5L research grant for a career-guidance AI serving 10,000+ students &middot; Founder of AI Spark (MMMUT). Looking for AI/ML engineering &amp; AI security roles focusing on agentic systems, evals, and secure cloud deployment.
+            </p>
+          </div>
+
+          <!-- Text-Style Action Links (Underlined with arrows, no heavy cards/buttons) -->
+          <div class="hero-actions">
+            <a href="#work" class="arrow-link">View my work <span class="arrow" aria-hidden="true">&darr;</span></a>
+            <a href="assets/resume.pdf" class="arrow-link" target="_blank" rel="noopener">Download resume <span class="arrow" aria-hidden="true">&nearr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider container" />
+
+    <!-- ========================================================
+         2. ABOUT SECTION
+         ======================================================== -->
+    <section id="about" class="editorial-section container fade-up">
+      <div class="editorial-label">
+        <span class="mono-label">ABOUT</span>
+      </div>
+      <div class="editorial-content">
+        <h2 class="section-heading">Engineering deterministic agents and scalable intelligence.</h2>
+        
+        <div class="editorial-prose">
+          <p>
+            I am a Computer Science &amp; Engineering graduate from Madan Mohan Malaviya University of Technology, Gorakhpur (CGPA 8.01/10.0) and currently an AI/ML Trainer at The SmartBridge in Noida. As the Founder and President of <em>AI Spark</em>—our university’s official AI society—I have led hands-on technical workshops training 200+ students on production LLMs, computer vision, and agentic AI architectures.
+          </p>
+          <p>
+            My work bridges probabilistic foundation models with deterministic software engineering, DevSecOps, and advanced AI security. Whether deploying LLM evaluation pipelines and scalable model endpoints on AWS (Bedrock, SageMaker, EC2, Lambda) lifting output consistency by 30%, orchestrating 20+ multi-agent systems in <em>Agent Forge</em> with a 59-tool MCP Slack bot and mem0 long-term memory, or architecting prompt injection defenses and automated guardrails, I prioritize quantifiable reliability and secure cloud deployment.
+          </p>
+          <p>
+            Awarded Rank 1 nationwide with a ₹2.5 Lakh research grant by the Department of Science and Technology (DST), Govt. of India to build and deploy a government-patented career intelligence pipeline serving 10,000+ students across 3 states. I am actively looking for AI/ML engineering and AI security roles where agent reliability, evals, and robust production guardrails matter.
+          </p>
+        </div>
+
+        <!-- Quick Facts in Mono Font -->
+        <div class="quick-facts-card">
+          <h3 class="quick-facts-title">QUICK FACTS</h3>
+          <dl class="quick-facts-list">
+            <div class="quick-fact-row">
+              <dt>Location</dt>
+              <dd>Noida, India</dd>
+            </div>
+            <div class="quick-fact-row">
+              <dt>Currently</dt>
+              <dd>AI/ML Trainer at The SmartBridge</dd>
+            </div>
+            <div class="quick-fact-row">
+              <dt>Focus areas</dt>
+              <dd>Multi-Agent Orchestration, LLM Evals, RAG, Agentic AI Security, DevSecOps, AWS Security and Deployment, Advanced AI Security</dd>
+            </div>
+            <div class="quick-fact-row">
+              <dt>Open to</dt>
+              <dd>AI/ML Engineering &amp; AI Security roles focusing on agentic systems, evals, and secure cloud deployment</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider container" />
+
+    <!-- ========================================================
+         3. SKILLS / TOOLBOX SECTION
+         ======================================================== -->
+    <section id="skills" class="editorial-section container fade-up">
+      <div class="editorial-label">
+        <span class="mono-label">TOOLBOX</span>
+      </div>
+      <div class="editorial-content">
+        <h2 class="section-heading">Tools I work with.</h2>
+        <p class="section-subtext muted">
+          A curated inventory of technologies, frameworks, and methodologies I leverage daily in production.
+        </p>
+
+        <!-- Dynamically rendered from SKILLS_DATA in script.js for trivial edits -->
+        <div id="skills-container" class="skills-groups">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider container" />
+
+    <!-- ========================================================
+         4. EXPERIENCE SECTION
+         ======================================================== -->
+    <section id="experience" class="editorial-section container fade-up">
+      <div class="editorial-label">
+        <span class="mono-label">EXPERIENCE</span>
+      </div>
+      <div class="editorial-content">
+        <h2 class="section-heading">Where I've worked and built.</h2>
+        <p class="section-subtext muted">
+          Track record across engineering teams, applied research labs, and freelance consulting.
+        </p>
+
+        <!-- Vertical Timeline without heavy cards -->
+        <div id="experience-container" class="timeline">
+          <!-- Populated by JavaScript from EXPERIENCE_DATA -->
+        </div>
+
+        <div class="section-footer-link">
+          <a href="assets/resume.pdf" class="arrow-link" target="_blank" rel="noopener">Full resume (PDF) <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider container" />
+
+    <!-- ========================================================
+         5. WRITING (TOP LINKEDIN POSTS) SECTION
+         ======================================================== -->
+    <section id="writing" class="editorial-section container fade-up">
+      <div class="editorial-label">
+        <span class="mono-label">WRITING</span>
+      </div>
+      <div class="editorial-content">
+        <h2 class="section-heading">Things I've shared.</h2>
+        <p class="section-subtext muted">
+          Top posts from LinkedIn on AI, agents and building in public.
+        </p>
+
+        <!-- Filter Chips: All / Security / Agents / RAG / ML / Career -->
+        <div class="filter-chips" role="tablist" aria-label="Filter writing topics">
+          <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="security" role="tab" aria-selected="false">Security</button>
+          <button class="chip" data-filter="agents" role="tab" aria-selected="false">Agents</button>
+          <button class="chip" data-filter="rag" role="tab" aria-selected="false">RAG</button>
+          <button class="chip" data-filter="ml" role="tab" aria-selected="false">ML &amp; Systems</button>
+          <button class="chip" data-filter="career" role="tab" aria-selected="false">Career</button>
+        </div>
+
+        <!-- Populated from WRITING_DATA in script.js -->
+        <div id="writing-container" class="writing-list" role="tabpanel">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <div class="section-footer-link">
+          <a href="https://www.linkedin.com/in/arya-aditya-" target="_blank" rel="noopener" class="arrow-link">More on LinkedIn <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider container" />
+
+    <!-- ========================================================
+         6. SELECTED WORK & FINDINGS SECTION
+         ======================================================== -->
+    <section id="work" class="editorial-section container fade-up">
+      <div class="editorial-label">
+        <span class="mono-label">SELECTED WORK</span>
+      </div>
+      <div class="editorial-content">
+        <h2 class="section-heading">Projects and findings.</h2>
+        <p class="section-subtext muted">
+          A few things I've built, and what I learned from them.
+        </p>
+
+        <!-- Full-width rows with accordion write-ups, rendered from PROJECTS_DATA -->
+        <div id="projects-container" class="projects-list">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider container" />
+
+    <!-- ========================================================
+         7. CONTACT SECTION
+         ======================================================== -->
+    <section id="contact" class="editorial-section container fade-up">
+      <div class="editorial-label">
+        <span class="mono-label">CONTACT</span>
+      </div>
+      <div class="editorial-content">
+        <h2 class="section-heading">Let's build something.</h2>
+        <p class="contact-lead">
+          Open to AI/ML engineering &amp; AI security roles, consulting and collaborations.
+        </p>
+
+        <!-- Direct Social & Email Links -->
+        <div class="contact-links-row">
+          <a href="mailto:adityayadav81086@gmail.com" class="arrow-link">Email <span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a href="tel:+918115600172" class="arrow-link">+91 8115600172 <span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a href="https://github.com/Aditya7808" target="_blank" rel="noopener" class="arrow-link">GitHub <span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a href="https://linkedin.com/in/arya-aditya-" target="_blank" rel="noopener" class="arrow-link">LinkedIn <span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener" class="arrow-link">Resume <span class="arrow" aria-hidden="true">&nearr;</span></a>
+        </div>
+
+        <!-- Minimal Underline-Style Contact Form -->
+        <form id="contact-form" class="editorial-form" action="https://formspree.io/f/placeholder" method="POST">
+          <!-- Note: User can replace Formspree URL with their own form ID -->
+          <div class="form-group">
+            <label for="form-name" class="form-label">Name</label>
+            <input type="text" id="form-name" name="name" class="underline-input" placeholder="Your name" required autocomplete="name">
+          </div>
+          
+          <div class="form-group">
+            <label for="form-email" class="form-label">Email</label>
+            <input type="email" id="form-email" name="_replyto" class="underline-input" placeholder="your.email@example.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="form-message" class="form-label">Message</label>
+            <textarea id="form-message" name="message" class="underline-input textarea-input" rows="3" placeholder="Tell me about what you are building..." required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="text-button" id="submit-btn">
+              Send message <span class="arrow" aria-hidden="true">&rarr;</span>
+            </button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer container">
+    <div class="footer-inner">
+      <p class="copyright">&copy; 2026 Aditya Yadav. Built with clean HTML, CSS &amp; vanilla JS.</p>
+      <a href="#home" class="back-to-top arrow-link">Back to top <span class="arrow" aria-hidden="true">&uarr;</span></a>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       HD FLOWCHART / ARCHITECTURE DIAGRAM ZOOM LIGHTBOX MODAL
+       ======================================================== -->
+  <div id="image-lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="HD Flowchart Viewer" hidden>
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container" role="document">
+      <!-- Top Bar: Title & Controls -->
+      <header class="lightbox-header">
+        <div class="lightbox-title-wrap">
+          <span class="mono-label lightbox-tag">HD ARCHITECTURE FLOWCHART</span>
+          <h3 id="lightbox-caption" class="lightbox-title">Architecture Diagram</h3>
+        </div>
+        <div class="lightbox-toolbar" role="toolbar" aria-label="Zoom and pan controls">
+          <button type="button" class="lightbox-btn" id="lightbox-zoom-out" title="Zoom Out ( - )" aria-label="Zoom Out">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="8" y1="11" x2="14" y2="11"></line><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <span id="lightbox-zoom-level" class="lightbox-zoom-level" aria-live="polite">100%</span>
+          <button type="button" class="lightbox-btn" id="lightbox-zoom-in" title="Zoom In ( + )" aria-label="Zoom In">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <button type="button" class="lightbox-btn" id="lightbox-reset" title="Reset to Fit ( 0 )" aria-label="Reset Zoom">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+          </button>
+          <a href="#" id="lightbox-raw-link" class="lightbox-btn lightbox-link-btn" target="_blank" rel="noopener noreferrer" title="Open full resolution in new tab" aria-label="Open full resolution image in new tab">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+          <button type="button" class="lightbox-btn lightbox-close-btn" id="lightbox-close" title="Close ( Esc )" aria-label="Close Lightbox">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Stage: Pan & Zoom Area -->
+      <div class="lightbox-stage" id="lightbox-stage" tabindex="0" aria-label="Interactive pan and zoom area. Scroll wheel or double-click to zoom, drag to pan.">
+        <div class="lightbox-viewport" id="lightbox-viewport">
+          <img id="lightbox-img" src="" alt="HD Flowchart Diagram" class="lightbox-img">
+        </div>
+      </div>
+
+      <!-- Footer: Interaction Hints -->
+      <footer class="lightbox-hint-bar">
+        <span><kbd>Scroll</kbd> or <kbd>Double-click</kbd> zoom &bull; <kbd>Click &amp; drag</kbd> pan &bull; <kbd>+</kbd>/<kbd>-</kbd> scale &bull; <kbd>0</kbd> reset &bull; <kbd>Esc</kbd> close</span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Script file containing data arrays and dynamic renderers -->
+  <script src="script.js"></script>
+</body>
+</html>

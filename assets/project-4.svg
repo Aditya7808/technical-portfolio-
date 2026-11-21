@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 720" width="100%" height="auto">
+  <defs>
+    <style>
+      .main-title { font-family: 'Newsreader', Georgia, serif; font-size: 23px; font-weight: 700; fill: #1C1917; letter-spacing: 0.06em; }
+      .sub-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; font-weight: 600; fill: #78716C; letter-spacing: 0.12em; }
+      .col-header { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 11px; font-weight: 700; fill: #2F5D9E; letter-spacing: 0.08em; }
+      .node-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 11.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.04em; }
+      .node-sub { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 9px; fill: rgba(255, 255, 255, 0.9); letter-spacing: 0.02em; }
+      .desc-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; font-weight: 700; fill: #2F5D9E; letter-spacing: 0.06em; }
+      .desc-body { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 8.5px; fill: #57534E; line-height: 1.45; }
+      .legend-lbl { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 8px; fill: #78716C; letter-spacing: 0.05em; font-weight: 600; }
+      .arrow-lbl { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 8.5px; fill: #78716C; font-weight: 600; }
+    </style>
+    <marker id="arr-black" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1C1917"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#C2410C"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2F5D9E"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FAF6F0" rx="12" stroke="#E6DFD5" stroke-width="2"/>
+
+  <!-- Main Header -->
+  <text x="575" y="44" class="main-title" text-anchor="middle">SENTINELAI (CYBERAGENT) · FULL-STACK SECURITY ARCHITECTURE</text>
+  <text x="575" y="64" class="sub-title" text-anchor="middle">ZERO-TRUST GATEWAY / INJECTION FIREWALL / HITL GATES / ISOLATED RAG / SHA-256 LEDGER</text>
+
+  <!-- ========================================================
+       COLUMN 1: 01 INGRESS &amp; INBOUND FIREWALL
+       ======================================================== -->
+  <rect x="40" y="85" width="320" height="470" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="55" y="108" class="col-header">01 INGRESS &amp; INBOUND FIREWALL</text>
+
+  <!-- Node: Client Application (Teal) -->
+  <rect x="65" y="125" width="270" height="52" rx="8" fill="#2A9D8F"/>
+  <text x="200" y="148" class="node-title" text-anchor="middle">ENTERPRISE CLIENT APP</text>
+  <text x="200" y="163" class="node-sub" text-anchor="middle">REST / WebSockets · User prompts · API</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="177" x2="200" y2="208" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: JWT &amp; Zero-Trust Auth (Blue) -->
+  <rect x="65" y="210" width="270" height="52" rx="8" fill="#457B9D"/>
+  <text x="200" y="233" class="node-title" text-anchor="middle">JWT VALIDATION &amp; ZERO-TRUST</text>
+  <text x="200" y="248" class="node-sub" text-anchor="middle">Tenant clearance · Identity verification</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="262" x2="200" y2="293" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: Injection Firewall (Coral/Red) -->
+  <rect x="65" y="295" width="270" height="54" rx="8" fill="#E76F51"/>
+  <text x="200" y="318" class="node-title" text-anchor="middle">INJECTION FIREWALL (&lt;15ms)</text>
+  <text x="200" y="333" class="node-sub" text-anchor="middle">AST heuristics · DAN deflector · Jailbreaks</text>
+
+  <!-- Arrow down (Violation Branch) -->
+  <line x1="200" y1="349" x2="200" y2="380" stroke="#C2410C" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arr-red)"/>
+  <text x="208" y="368" class="arrow-lbl" fill="#C2410C">Violation</text>
+
+  <!-- Node: 403 Deflection Guard (Dark Red) -->
+  <rect x="65" y="385" width="270" height="52" rx="8" fill="#C2410C"/>
+  <text x="200" y="408" class="node-title" text-anchor="middle">403 BLOCKED / GUARD NOTICE</text>
+  <text x="200" y="423" class="node-sub" text-anchor="middle">Payload rejected pre-inference · Logged</text>
+
+  <!-- Arrow safe payload to Column 2 -->
+  <path d="M 335 322 L 390 322 L 390 151 L 435 151" fill="none" stroke="#2F5D9E" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <text x="345" y="315" class="arrow-lbl" fill="#2F5D9E">Safe</text>
+
+  <!-- ========================================================
+       COLUMN 2: 02 ORCHESTRATION &amp; HITL GATES
+       ======================================================== -->
+  <rect x="385" y="85" width="340" height="470" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="400" y="108" class="col-header">02 ORCHESTRATION &amp; HITL GATES</text>
+
+  <!-- Node: LangGraph Orchestrator (Teal) -->
+  <rect x="410" y="125" width="290" height="54" rx="8" fill="#2A9D8F"/>
+  <text x="555" y="148" class="node-title" text-anchor="middle">LANGGRAPH ORCHESTRATOR</text>
+  <text x="555" y="163" class="node-sub" text-anchor="middle">Stateful context budgeting · Intent routing</text>
+
+  <!-- Arrow down -->
+  <line x1="555" y1="179" x2="555" y2="208" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: PII &amp; Secrets Sanitizer (Blue) -->
+  <rect x="410" y="210" width="290" height="52" rx="8" fill="#457B9D"/>
+  <text x="555" y="233" class="node-title" text-anchor="middle">PII &amp; CREDENTIAL SANITIZER</text>
+  <text x="555" y="248" class="node-sub" text-anchor="middle">AWS keys · GitHub tokens · SSNs · Secrets</text>
+
+  <!-- Arrow down -->
+  <line x1="555" y1="262" x2="555" y2="293" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: HITL Tool Authorization (Amber) -->
+  <rect x="410" y="295" width="290" height="54" rx="8" fill="#D97706"/>
+  <text x="555" y="318" class="node-title" text-anchor="middle">HITL TOOL AUTHORIZATION</text>
+  <text x="555" y="333" class="node-sub" text-anchor="middle">Least-privilege RBAC · Schema validation</text>
+
+  <!-- Arrow down (Privileged Action) -->
+  <line x1="555" y1="349" x2="555" y2="380" stroke="#C2410C" stroke-width="2" marker-end="url(#arr-red)"/>
+  <text x="562" y="368" class="arrow-lbl" fill="#C2410C">Privileged</text>
+
+  <!-- Node: Admin Verification Queue (Coral) -->
+  <rect x="410" y="385" width="290" height="52" rx="8" fill="#E76F51"/>
+  <text x="555" y="408" class="node-title" text-anchor="middle">ADMIN APPROVAL QUEUE</text>
+  <text x="555" y="423" class="node-sub" text-anchor="middle">Suspends SQL writes, refunds, AWS ops</text>
+
+  <!-- Arrow from Admin Approval resuming execution -->
+  <path d="M 700 411 L 715 411 L 715 322 L 700 322" fill="none" stroke="#2F5D9E" stroke-width="1.8" stroke-dasharray="3 3" marker-end="url(#arr-blue)"/>
+  <text x="718" y="370" class="arrow-lbl" fill="#2F5D9E">Approved</text>
+
+  <!-- Arrow to Column 3 -->
+  <path d="M 700 152 L 760 152 L 760 152 L 795 152" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- ========================================================
+       COLUMN 3: 03 RETRIEVAL, INFERENCE &amp; AUDIT
+       ======================================================== -->
+  <rect x="750" y="85" width="360" height="470" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="765" y="108" class="col-header">03 RETRIEVAL, INFERENCE &amp; AUDIT</text>
+
+  <!-- Node: Multi-Tenant Secure RAG (Blue) -->
+  <rect x="775" y="125" width="310" height="52" rx="8" fill="#457B9D"/>
+  <text x="930" y="148" class="node-title" text-anchor="middle">MULTI-TENANT SECURE RAG</text>
+  <text x="930" y="163" class="node-sub" text-anchor="middle">Isolated pgvector · Strict org_id ACLs</text>
+
+  <!-- Arrow down -->
+  <line x1="930" y1="177" x2="930" y2="208" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: Model Inference (Indigo / Purple) -->
+  <rect x="775" y="210" width="310" height="52" rx="8" fill="#6366F1"/>
+  <text x="930" y="233" class="node-title" text-anchor="middle">AWS BEDROCK &amp; CLAUDE 3</text>
+  <text x="930" y="248" class="node-sub" text-anchor="middle">Model inference · Zero-data-retention</text>
+
+  <!-- Arrow down -->
+  <line x1="930" y1="262" x2="930" y2="293" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: Outbound Scrubber (Teal) -->
+  <rect x="775" y="295" width="310" height="54" rx="8" fill="#2A9D8F"/>
+  <text x="930" y="318" class="node-title" text-anchor="middle">OUTBOUND DATA SCRUBBER</text>
+  <text x="930" y="333" class="node-sub" text-anchor="middle">Secondary PII scrub · Hallucination check</text>
+
+  <!-- Arrow down -->
+  <line x1="930" y1="349" x2="930" y2="380" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: SHA-256 Audit Ledger (Dark Navy) -->
+  <rect x="775" y="385" width="310" height="52" rx="8" fill="#1E293B"/>
+  <text x="930" y="408" class="node-title" text-anchor="middle">SHA-256 COMPLIANCE LEDGER</text>
+  <text x="930" y="423" class="node-sub" text-anchor="middle">Immutable audit trail · OpenTelemetry / SIEM</text>
+
+  <!-- Final Return Arrow back to Client App -->
+  <path d="M 930 437 L 930 480 L 200 480 L 200 442" fill="none" stroke="#2F5D9E" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <text x="565" y="474" class="arrow-lbl" fill="#2F5D9E">Sanitized, verified response delivered to client</text>
+
+  <!-- ========================================================
+       BOTTOM DESCRIPTIONS
+       ======================================================== -->
+  <text x="50" y="580" class="desc-title">FIREWALL &amp; INGRESS</text>
+  <text x="50" y="596" class="desc-body">All prompts pass through sub-15ms AST heuristic scanner</text>
+  <text x="50" y="609" class="desc-body">deflecting DAN personas and obfuscations pre-inference.</text>
+
+  <text x="400" y="580" class="desc-title">ORCHESTRATION &amp; HITL GATES</text>
+  <text x="400" y="596" class="desc-body">LangGraph manages state; privileged tools are suspended</text>
+  <text x="400" y="609" class="desc-body">in an administrative queue until signed human approval.</text>
+
+  <text x="770" y="580" class="desc-title">ISOLATED RAG &amp; AUDIT</text>
+  <text x="770" y="596" class="desc-body">Multi-tenant vector search with org_id ACLs. Every check</text>
+  <text x="770" y="609" class="desc-body">commits to an immutable, cryptographically sealed ledger.</text>
+
+  <!-- ========================================================
+       BOTTOM LEGEND
+       ======================================================== -->
+  <!-- Legend 1: Application Flow (Teal) -->
+  <rect x="50" y="640" width="16" height="12" rx="3" fill="#2A9D8F"/>
+  <text x="73" y="650" class="legend-lbl">APPLICATION FLOW</text>
+
+  <!-- Legend 2: Services / Storage (Blue) -->
+  <rect x="230" y="640" width="16" height="12" rx="3" fill="#457B9D"/>
+  <text x="253" y="650" class="legend-lbl">SERVICES / RETRIEVAL</text>
+
+  <!-- Legend 3: Security &amp; Firewall (Coral) -->
+  <rect x="430" y="640" width="16" height="12" rx="3" fill="#E76F51"/>
+  <text x="453" y="650" class="legend-lbl">SECURITY / FIREWALL</text>
+
+  <!-- Legend 4: HITL Control Gate (Amber) -->
+  <rect x="630" y="640" width="16" height="12" rx="3" fill="#D97706"/>
+  <text x="653" y="650" class="legend-lbl">HITL CONTROL GATE</text>
+
+  <!-- Legend 5: Model Inference (Indigo) -->
+  <rect x="810" y="640" width="16" height="12" rx="3" fill="#6366F1"/>
+  <text x="833" y="650" class="legend-lbl">MODEL INFERENCE</text>
+
+  <!-- Brand watermark -->
+  <text x="1010" y="650" class="legend-lbl">SENTINELAI</text>
+</svg>

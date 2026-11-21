@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 720" width="100%" height="auto">
+  <defs>
+    <style>
+      .main-title { font-family: 'Newsreader', Georgia, serif; font-size: 23px; font-weight: 700; fill: #1C1917; letter-spacing: 0.06em; }
+      .sub-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; font-weight: 600; fill: #78716C; letter-spacing: 0.12em; }
+      .col-header { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 11px; font-weight: 700; fill: #2F5D9E; letter-spacing: 0.08em; }
+      .node-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 11.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.04em; }
+      .node-sub { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 9px; fill: rgba(255, 255, 255, 0.9); letter-spacing: 0.02em; }
+      .desc-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; font-weight: 700; fill: #2F5D9E; letter-spacing: 0.06em; }
+      .desc-body { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 8.5px; fill: #57534E; line-height: 1.45; }
+      .legend-lbl { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 8px; fill: #78716C; letter-spacing: 0.05em; font-weight: 600; }
+      .arrow-lbl { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 8.5px; fill: #78716C; font-weight: 600; }
+    </style>
+    <marker id="arr-black" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1C1917"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2F5D9E"/>
+    </marker>
+    <marker id="arr-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#D97706"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FAF6F0" rx="12" stroke="#E6DFD5" stroke-width="2"/>
+
+  <!-- Main Header -->
+  <text x="575" y="44" class="main-title" text-anchor="middle">CLOUDSENTINEL · MULTI-CLOUD MONITORING &amp; REMEDIATION</text>
+  <text x="575" y="64" class="sub-title" text-anchor="middle">AWS &amp; GCP COLLECTORS / TIMESCALEDB / STATSMODELS &amp; PROPHET / TERRAFORM REMEDIATION</text>
+
+  <!-- ========================================================
+       COLUMN 1: 01 MULTI-CLOUD INGESTION
+       ======================================================== -->
+  <rect x="40" y="85" width="320" height="470" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="55" y="108" class="col-header">01 MULTI-CLOUD INGESTION</text>
+
+  <!-- Node: Cloud Collectors (Teal) -->
+  <rect x="65" y="125" width="270" height="54" rx="8" fill="#2A9D8F"/>
+  <text x="200" y="148" class="node-title" text-anchor="middle">AWS &amp; GCP COLLECTORS</text>
+  <text x="200" y="163" class="node-sub" text-anchor="middle">boto3 (EC2, EBS, RDS, S3) · Google Cloud SDK</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="179" x2="200" y2="208" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: Schema Normalizer (Blue) -->
+  <rect x="65" y="210" width="270" height="54" rx="8" fill="#457B9D"/>
+  <text x="200" y="233" class="node-title" text-anchor="middle">CANONICAL NORMALIZER</text>
+  <text x="200" y="248" class="node-sub" text-anchor="middle">4 shared entities: resource, metric, cost, finding</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="264" x2="200" y2="293" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: Storage Layer (Dark Navy) -->
+  <rect x="65" y="295" width="270" height="54" rx="8" fill="#1E293B"/>
+  <text x="200" y="318" class="node-title" text-anchor="middle">POSTGRESQL &amp; TIMESCALEDB</text>
+  <text x="200" y="333" class="node-sub" text-anchor="middle">Time-series metric hyper-tables &amp; inventory</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="349" x2="200" y2="380" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: API &amp; Interfaces (Teal) -->
+  <rect x="65" y="385" width="270" height="52" rx="8" fill="#2A9D8F"/>
+  <text x="200" y="408" class="node-title" text-anchor="middle">INTERFACES &amp; WEBHOOKS</text>
+  <text x="200" y="423" class="node-sub" text-anchor="middle">FastAPI API · Grafana · Slack alerts</text>
+
+  <!-- Arrow from Storage to Column 2 -->
+  <path d="M 335 322 L 390 322 L 390 151 L 435 151" fill="none" stroke="#2F5D9E" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <text x="345" y="315" class="arrow-lbl" fill="#2F5D9E">Metrics</text>
+
+  <!-- ========================================================
+       COLUMN 2: 02 DETERMINISTIC ANALYSIS &amp; LLM
+       ======================================================== -->
+  <rect x="385" y="85" width="340" height="470" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="400" y="108" class="col-header">02 DETERMINISTIC ANALYSIS &amp; LLM</text>
+
+  <!-- Node: Deterministic Rules Engine (Blue) -->
+  <rect x="410" y="125" width="290" height="54" rx="8" fill="#457B9D"/>
+  <text x="555" y="148" class="node-title" text-anchor="middle">RULES ENGINE (DETERMINISTIC)</text>
+  <text x="555" y="163" class="node-sub" text-anchor="middle">Idle compute, zombie storage, cost anomaly rules</text>
+
+  <!-- Arrow down -->
+  <line x1="555" y1="179" x2="555" y2="208" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: Statistical Models (Purple) -->
+  <rect x="410" y="210" width="290" height="54" rx="8" fill="#6366F1"/>
+  <text x="555" y="233" class="node-title" text-anchor="middle">PROPHET &amp; STATSMODELS</text>
+  <text x="555" y="248" class="node-sub" text-anchor="middle">Time-series forecasting &amp; spend outlier detection</text>
+
+  <!-- Arrow down -->
+  <line x1="555" y1="264" x2="555" y2="293" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: Savings Calculator (Blue) -->
+  <rect x="410" y="295" width="290" height="52" rx="8" fill="#457B9D"/>
+  <text x="555" y="318" class="node-title" text-anchor="middle">HARD SAVINGS CALCULATOR</text>
+  <text x="555" y="333" class="node-sub" text-anchor="middle">Strict math calculations (Zero LLM math)</text>
+
+  <!-- Arrow down -->
+  <line x1="555" y1="347" x2="555" y2="380" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: LLM Explainer (Teal) -->
+  <rect x="410" y="385" width="290" height="52" rx="8" fill="#2A9D8F"/>
+  <text x="555" y="408" class="node-title" text-anchor="middle">LLM EXPLAINER (PYDANTIC)</text>
+  <text x="555" y="423" class="node-sub" text-anchor="middle">Translates pre-computed findings into JSON</text>
+
+  <!-- Arrow to Column 3 -->
+  <path d="M 700 152 L 760 152 L 760 152 L 795 152" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- ========================================================
+       COLUMN 3: 03 APPROVAL-GATED REMEDIATION
+       ======================================================== -->
+  <rect x="750" y="85" width="360" height="470" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="765" y="108" class="col-header">03 APPROVAL-GATED REMEDIATION</text>
+
+  <!-- Node: Remediation Planner (Amber) -->
+  <rect x="775" y="125" width="310" height="52" rx="8" fill="#D97706"/>
+  <text x="930" y="148" class="node-title" text-anchor="middle">REMEDIATION PLANNER</text>
+  <text x="930" y="163" class="node-sub" text-anchor="middle">Generates infrastructure action plan</text>
+
+  <!-- Arrow down -->
+  <line x1="930" y1="177" x2="930" y2="208" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+
+  <!-- Node: Terraform Validate &amp; Plan (Amber) -->
+  <rect x="775" y="210" width="310" height="52" rx="8" fill="#D97706"/>
+  <text x="930" y="233" class="node-title" text-anchor="middle">TERRAFORM VALIDATE &amp; PLAN</text>
+  <text x="930" y="248" class="node-sub" text-anchor="middle">Dry-run default · Zero cloud mutation</text>
+
+  <!-- Arrow down -->
+  <line x1="930" y1="262" x2="930" y2="293" stroke="#C2410C" stroke-width="2" marker-end="url(#arr-black)"/>
+  <text x="938" y="280" class="arrow-lbl" fill="#C2410C">Plan Gate</text>
+
+  <!-- Node: Human Approval Gate (Coral/Red) -->
+  <rect x="775" y="295" width="310" height="54" rx="8" fill="#E76F51"/>
+  <text x="930" y="318" class="node-title" text-anchor="middle">HUMAN APPROVAL GATE</text>
+  <text x="930" y="333" class="node-sub" text-anchor="middle">Requires explicit admin signature to proceed</text>
+
+  <!-- Arrow down -->
+  <line x1="930" y1="349" x2="930" y2="380" stroke="#1C1917" stroke-width="2" marker-end="url(#arr-black)"/>
+  <text x="938" y="368" class="arrow-lbl" fill="#2F5D9E">Approved</text>
+
+  <!-- Node: Terraform Apply &amp; Rollback (Dark Navy) -->
+  <rect x="775" y="385" width="310" height="52" rx="8" fill="#1E293B"/>
+  <text x="930" y="408" class="node-title" text-anchor="middle">TERRAFORM APPLY &amp; AUDIT</text>
+  <text x="930" y="423" class="node-sub" text-anchor="middle">Atomic remediation with rollback snapshot log</text>
+
+  <!-- Feedback line back to interfaces -->
+  <path d="M 930 437 L 930 480 L 200 480 L 200 442" fill="none" stroke="#2F5D9E" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <text x="565" y="474" class="arrow-lbl" fill="#2F5D9E">Remediation status &amp; cost savings logged</text>
+
+  <!-- ========================================================
+       BOTTOM DESCRIPTIONS
+       ======================================================== -->
+  <text x="50" y="580" class="desc-title">MULTI-CLOUD INGESTION</text>
+  <text x="50" y="596" class="desc-body">Pulls raw inventory, metrics, and billing from AWS and GCP,</text>
+  <text x="50" y="609" class="desc-body">normalizing data into 4 typed schemas stored in TimescaleDB.</text>
+
+  <text x="400" y="580" class="desc-title">DETERMINISTIC ANALYSIS</text>
+  <text x="400" y="596" class="desc-body">The LLM never calculates numbers: statistical time-series models</text>
+  <text x="400" y="609" class="desc-body">and hard rules compute savings estimates with zero hallucination.</text>
+
+  <text x="770" y="580" class="desc-title">APPROVAL-GATED REMEDIATION</text>
+  <text x="770" y="596" class="desc-body">Dry-run by default. Terraform applies changes only after</text>
+  <text x="770" y="609" class="desc-body">explicit human approval, creating an immutable rollback audit row.</text>
+
+  <!-- ========================================================
+       BOTTOM LEGEND
+       ======================================================== -->
+  <rect x="50" y="640" width="16" height="12" rx="3" fill="#2A9D8F"/>
+  <text x="73" y="650" class="legend-lbl">INGESTION &amp; INTERFACES</text>
+
+  <rect x="230" y="640" width="16" height="12" rx="3" fill="#457B9D"/>
+  <text x="253" y="650" class="legend-lbl">STORAGE &amp; RULES</text>
+
+  <rect x="430" y="640" width="16" height="12" rx="3" fill="#6366F1"/>
+  <text x="453" y="650" class="legend-lbl">STATISTICAL MODELS</text>
+
+  <rect x="630" y="640" width="16" height="12" rx="3" fill="#D97706"/>
+  <text x="653" y="650" class="legend-lbl">TERRAFORM PLANNER</text>
+
+  <rect x="810" y="640" width="16" height="12" rx="3" fill="#E76F51"/>
+  <text x="833" y="650" class="legend-lbl">HUMAN APPROVAL GATE</text>
+
+  <text x="1000" y="650" class="legend-lbl">CLOUDSENTINEL</text>
+</svg>

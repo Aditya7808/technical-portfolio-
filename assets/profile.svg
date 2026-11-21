@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAE3D9" />
+      <stop offset="100%" stop-color="#D9CFBF" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="360" fill="url(#avatarBg)" rx="180"/>
+  <circle cx="180" cy="140" r="62" fill="#8C8275"/>
+  <path d="M70,320 C85,245 130,220 180,220 C230,220 275,245 290,320 Z" fill="#8C8275"/>
+  <text x="180" y="345" font-family="'JetBrains Mono', monospace" font-size="12" fill="#5A534B" text-anchor="middle" letter-spacing="1.5">REPLACE WITH YOUR PHOTO</text>
+</svg>

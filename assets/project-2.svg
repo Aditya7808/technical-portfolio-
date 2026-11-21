@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="100%" height="auto">
+  <defs>
+    <style>
+      .main-title { font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 700; fill: #1C1917; letter-spacing: 0.08em; }
+      .sub-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; font-weight: 600; fill: #78716C; letter-spacing: 0.12em; }
+      .col-header { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10.5px; font-weight: 700; fill: #2F5D9E; letter-spacing: 0.08em; }
+      .node-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 11.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.04em; }
+      .node-sub { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 9px; fill: rgba(255, 255, 255, 0.85); letter-spacing: 0.02em; }
+      .desc-title { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; font-weight: 700; fill: #2F5D9E; letter-spacing: 0.06em; }
+      .desc-body { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 8.5px; fill: #57534E; line-height: 1.4; }
+      .legend-lbl { font-family: 'JetBrains Mono', Menlo, monospace; font-size: 8px; fill: #78716C; letter-spacing: 0.05em; font-weight: 600; }
+    </style>
+    <marker id="vanco-arr" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1C1917"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FAF6F0" rx="12" stroke="#E6DFD5" stroke-width="2"/>
+
+  <!-- Main Header -->
+  <text x="550" y="45" class="main-title" text-anchor="middle">VANCO AI ASSISTANT · FULL-STACK ARCHITECTURE</text>
+  <text x="550" y="65" class="sub-title" text-anchor="middle">REACT FRONTEND / FASTAPI BACKEND / GPT-4 INTELLIGENCE / DUAL MEMORY</text>
+
+  <!-- ========================================================
+       COLUMN 1: 01 CLIENT EXPERIENCE
+       ======================================================== -->
+  <rect x="40" y="90" width="290" height="440" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="55" y="112" class="col-header">01 CLIENT EXPERIENCE</text>
+
+  <!-- Node: User / Web Client (Teal) -->
+  <rect x="68" y="130" width="230" height="50" rx="8" fill="#2A9D8F"/>
+  <text x="183" y="152" class="node-title" text-anchor="middle">USER / WEB CLIENT</text>
+  <text x="183" y="167" class="node-sub" text-anchor="middle">Question · conversation · actions</text>
+
+  <!-- Arrow down -->
+  <line x1="183" y1="180" x2="183" y2="218" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: React Application (Teal) -->
+  <rect x="68" y="220" width="230" height="52" rx="8" fill="#2A9D8F"/>
+  <text x="183" y="243" class="node-title" text-anchor="middle">REACT APPLICATION</text>
+  <text x="183" y="258" class="node-sub" text-anchor="middle">Chat UI · profile · settings · alerts</text>
+
+  <!-- Split Arrows -->
+  <path d="M 140 272 L 120 308" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+  <path d="M 226 272 L 246 308" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: Session State (Blue) -->
+  <rect x="68" y="310" width="105" height="52" rx="8" fill="#457B9D"/>
+  <text x="120" y="333" class="node-title" text-anchor="middle">SESSION STATE</text>
+  <text x="120" y="348" class="node-sub" text-anchor="middle">Active chat · UI state</text>
+
+  <!-- Node: Authentication (Blue) -->
+  <rect x="193" y="310" width="105" height="52" rx="8" fill="#457B9D"/>
+  <text x="245" y="333" class="node-title" text-anchor="middle">AUTHENTICATION</text>
+  <text x="245" y="348" class="node-sub" text-anchor="middle">JWT token handling</text>
+
+  <!-- Converging Arrows -->
+  <path d="M 120 362 L 140 398" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+  <path d="M 245 362 L 225 398" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: Assistant Experience (Teal) -->
+  <rect x="68" y="400" width="230" height="54" rx="8" fill="#2A9D8F"/>
+  <text x="183" y="423" class="node-title" text-anchor="middle">ASSISTANT EXPERIENCE</text>
+  <text x="183" y="438" class="node-sub" text-anchor="middle">Messages · response rendering · notifications</text>
+
+  <!-- ========================================================
+       COLUMN 2: 02 APPLICATION BACKEND
+       ======================================================== -->
+  <rect x="350" y="90" width="310" height="440" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="365" y="112" class="col-header">02 APPLICATION BACKEND</text>
+
+  <!-- Arrow from User Client to FastAPI Entry Point -->
+  <line x1="298" y1="155" x2="378" y2="155" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: FastAPI Entry Point (Blue) -->
+  <rect x="380" y="130" width="240" height="50" rx="8" fill="#457B9D"/>
+  <text x="500" y="152" class="node-title" text-anchor="middle">FASTAPI ENTRY POINT</text>
+  <text x="500" y="167" class="node-sub" text-anchor="middle">HTTP request / response layer</text>
+
+  <!-- Arrow from React Application to JWT Validation -->
+  <line x1="298" y1="246" x2="378" y2="246" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Arrow down from FastAPI to JWT Validation -->
+  <line x1="435" y1="180" x2="435" y2="218" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: JWT Validation (Coral) -->
+  <rect x="380" y="220" width="112" height="52" rx="8" fill="#E76F51"/>
+  <text x="436" y="243" class="node-title" text-anchor="middle">JWT VALIDATION</text>
+  <text x="436" y="258" class="node-sub" text-anchor="middle">Protected request context</text>
+
+  <!-- Arrow JWT to API Routing -->
+  <line x1="492" y1="246" x2="506" y2="246" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: API Routing (Blue) -->
+  <rect x="508" y="220" width="112" height="52" rx="8" fill="#457B9D"/>
+  <text x="564" y="243" class="node-title" text-anchor="middle">API ROUTING</text>
+  <text x="564" y="258" class="node-sub" text-anchor="middle">Assistant · profile · alerts</text>
+
+  <!-- Arrows to Assistant Service -->
+  <path d="M 436 272 L 456 308" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+  <path d="M 564 272 L 544 308" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: Assistant Service (Teal) -->
+  <rect x="380" y="310" width="240" height="54" rx="8" fill="#2A9D8F"/>
+  <text x="500" y="333" class="node-title" text-anchor="middle">ASSISTANT SERVICE</text>
+  <text x="500" y="348" class="node-sub" text-anchor="middle">Request orchestration · context assembly</text>
+
+  <!-- Arrows to Profile &amp; Alert Service -->
+  <line x1="440" y1="364" x2="440" y2="398" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+  <line x1="560" y1="364" x2="560" y2="398" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: Profile Service (Blue) -->
+  <rect x="380" y="400" width="112" height="54" rx="8" fill="#457B9D"/>
+  <text x="436" y="423" class="node-title" text-anchor="middle">PROFILE SERVICE</text>
+  <text x="436" y="438" class="node-sub" text-anchor="middle">User attributes · live profile</text>
+
+  <!-- Node: Alert Service (Blue) -->
+  <rect x="508" y="400" width="112" height="54" rx="8" fill="#457B9D"/>
+  <text x="564" y="423" class="node-title" text-anchor="middle">ALERT SERVICE</text>
+  <text x="564" y="438" class="node-sub" text-anchor="middle">Alert creation · delivery status</text>
+
+  <!-- ========================================================
+       COLUMN 3: 03 AI + MEMORY SERVICES
+       ======================================================== -->
+  <rect x="680" y="90" width="375" height="440" rx="8" fill="#F4EEE5" stroke="#DCD4C7" stroke-width="1.2"/>
+  <text x="695" y="112" class="col-header">03 AI + MEMORY SERVICES</text>
+
+  <!-- Arrow from Assistant Service to Context Builder -->
+  <path d="M 620 325 L 670 325 L 670 155 L 720 155" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: Context Builder (Teal) -->
+  <rect x="725" y="130" width="240" height="50" rx="8" fill="#2A9D8F"/>
+  <text x="845" y="152" class="node-title" text-anchor="middle">CONTEXT BUILDER</text>
+  <text x="845" y="167" class="node-sub" text-anchor="middle">User context + relevant memory</text>
+
+  <!-- Arrow down from Context Builder to GPT-4 -->
+  <line x1="845" y1="180" x2="845" y2="228" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Arrow from Assistant Service to GPT-4 -->
+  <path d="M 620 345 L 670 345 L 670 255 L 720 255" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: GPT-4 Model (Coral) -->
+  <rect x="725" y="230" width="240" height="52" rx="8" fill="#E76F51"/>
+  <text x="845" y="253" class="node-title" text-anchor="middle">GPT-4 MODEL</text>
+  <text x="845" y="268" class="node-sub" text-anchor="middle">Reasoning · response generation</text>
+
+  <!-- Arrows split to Supermemory &amp; Supabase -->
+  <line x1="775" y1="282" x2="775" y2="318" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+  <line x1="915" y1="282" x2="915" y2="318" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: Supermemory (Blue) -->
+  <rect x="695" y="320" width="150" height="54" rx="8" fill="#457B9D"/>
+  <text x="770" y="343" class="node-title" text-anchor="middle">SUPERMEMORY</text>
+  <text x="770" y="358" class="node-sub" text-anchor="middle">Long-term conversational memory</text>
+
+  <!-- Node: Supabase (Blue) -->
+  <rect x="860" y="320" width="150" height="54" rx="8" fill="#457B9D"/>
+  <text x="935" y="343" class="node-title" text-anchor="middle">SUPABASE</text>
+  <text x="935" y="358" class="node-sub" text-anchor="middle">Persistent application / profile data</text>
+
+  <!-- Converging Arrows to Memory Sync -->
+  <line x1="770" y1="374" x2="770" y2="408" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+  <line x1="935" y1="374" x2="935" y2="408" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Node: Memory Sync (Teal) -->
+  <rect x="725" y="410" width="240" height="52" rx="8" fill="#2A9D8F"/>
+  <text x="845" y="433" class="node-title" text-anchor="middle">MEMORY SYNC</text>
+  <text x="845" y="448" class="node-sub" text-anchor="middle">Retrieve · update · persist context</text>
+
+  <!-- Long return line from Memory Sync / Assistant Service back to Assistant Experience -->
+  <path d="M 845 462 L 845 540 L 320 540 L 320 427 L 298 427" fill="none" stroke="#1C1917" stroke-width="2" marker-end="url(#vanco-arr)"/>
+
+  <!-- Alert Service to Client loop -->
+  <path d="M 620 427 L 650 427 L 650 525 L 340 525 L 340 440 L 298 440" fill="none" stroke="#1C1917" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#vanco-arr)"/>
+
+  <!-- ========================================================
+       BOTTOM DESCRIPTIONS
+       ======================================================== -->
+  <!-- Client Layer Description -->
+  <text x="50" y="565" class="desc-title">CLIENT LAYER</text>
+  <text x="50" y="582" class="desc-body">The browser captures user input and renders assistant output.</text>
+  <text x="50" y="596" class="desc-body">JWT is attached to protected API requests.</text>
+
+  <!-- Backend Responsibilities -->
+  <text x="365" y="565" class="desc-title">BACKEND RESPONSIBILITIES</text>
+  <text x="365" y="582" class="desc-body">FastAPI validates identity, routes requests and coordinates services.</text>
+  <text x="365" y="596" class="desc-body">Profile and alert workflows remain separate from response generation.</text>
+
+  <!-- Intelligence + Persistence -->
+  <text x="695" y="565" class="desc-title">INTELLIGENCE + PERSISTENCE</text>
+  <text x="695" y="582" class="desc-body">GPT-4 generates responses using assembled user context.</text>
+  <text x="695" y="596" class="desc-body">Supermemory and Supabase provide complementary memory / data stores.</text>
+
+  <!-- ========================================================
+       BOTTOM LEGEND
+       ======================================================== -->
+  <!-- Legend 1: Application Flow (Teal) -->
+  <rect x="65" y="625" width="16" height="12" rx="3" fill="#2A9D8F"/>
+  <text x="88" y="635" class="legend-lbl">APPLICATION FLOW</text>
+
+  <!-- Legend 2: Services / Storage (Blue) -->
+  <rect x="270" y="625" width="16" height="12" rx="3" fill="#457B9D"/>
+  <text x="293" y="635" class="legend-lbl">SERVICES / STORAGE</text>
+
+  <!-- Legend 3: Model / Security (Coral) -->
+  <rect x="500" y="625" width="16" height="12" rx="3" fill="#E76F51"/>
+  <text x="523" y="635" class="legend-lbl">MODEL / SECURITY</text>
+
+  <!-- Brand watermark -->
+  <text x="965" y="635" class="legend-lbl">VANCO AI</text>
+</svg>
